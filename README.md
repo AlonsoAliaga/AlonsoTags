@@ -7,7 +7,7 @@ Owners can create an unlimited amount of tags for players.\
 **This plugin does NOT include a scoreboard, nametag or chat system.**\
 It only provides placeholders that can be used in any other plugin that supports PlaceholderAPI
 ## Resources
-- [Spigot resource](https://www.spigotmc.org/resources/X/)
+- [Spigot resource](https://www.spigotmc.org/resources/83664/)
 - [Issue tracker](https://github.com/AlonsoAliaga/AlonsoTags/issues)
 - [Donate](https://paypal.me/AlonsoAliaga)
 - [bStats](https://bstats.org/plugin/bukkit/AlonsoTags)
