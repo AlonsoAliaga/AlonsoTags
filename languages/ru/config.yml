@@ -1,0 +1,107 @@
+#
+#               _   _                 _____
+#              /_\ | |___ _ _  ___ __|_   _|_ _ __ _ ___
+#             / _ \| / _ \ ' \(_-</ _ \| |/ _` / _` (_-<
+#            /_/ \_\_\___/_||_/__/\___/|_|\__,_\__, /__/
+#                                            |___/
+#
+#                           by AlonsoAliaga
+#          https://www.spigotmc.org/resources/authors/281176/}
+#
+#                   Russian translation by king5442
+#
+
+Messages:
+  No-permission: '&cУ вас не хватает прав.'
+  Reloaded: '&aНекоторые сообщения и опции быле перезагружены. Другие могут потребовать рестарта сервера'
+  Disabled-world: '&cВы не можете использовать эту комманду в данном мире!'
+  Invalid-player: '&cИгрок не онлайн!'
+  Target-not-loaded: '&cИгрок не был прогружен. Игрок должен перезайти на сервер!'
+  Please-reconnect: '&cНе определённая ошибка. Пожалуйста перезайдите на сервер!'
+  Help:
+    Admin:
+    - '&4 /alonsotags open <player> &f- &cОткрыть меню тегов > игроку'
+    - '&4 /alonsotags reload &f- &cПерезагрузить конфиг (Рекомендуется рестартнуть сервер)'
+    User:
+    - '&4 /alonsotags open &f- &cОткрыть меню тегов'
+  Tags:
+    Title: '&8Страниц(а) с тегами ({PAGE}/{MAX})'
+    Already-selected: '&aВы не можете использовать этот тег, он уже применён!'
+    Tag-selected: '&aВы выбрали {TAG}&a тэг!'
+    Tag-cleared: '&cВы очистили ваши теги.'
+    Tag-not-selected: '&cТэг не выбран.'
+  Placeholders:
+    Tag:
+      None: ''
+      Format: '{TAG}'
+    Tag-chat:
+      None: ''
+      Format: '{TAG} '
+    Tag-tab:
+      None: ''
+      Format: ' {TAG}'
+    Tag-identifier:
+      None: None
+      Format: '{TAG}'
+    Tag-scoreboard:
+      None: '&7None'
+      Format: '{TAG}'
+Permissions:
+  Admin: alonsotags.admin
+Items:
+  Player:
+    Active:
+      Displayname: '&a{PLAYER}'
+      Lore:
+      - '&7Ваш тэг: &f{TAG}'
+      - ' '
+      - '&eТык, что бы убрать тег.'
+    Inactive:
+      Displayname: '&c{PLAYER}'
+      Lore:
+      - '&7Ваш тэг: &cНе выбран'
+  Previous-page:
+    Material: ARROW
+    Custom-model-data: 0
+    Displayname: '&aПредыдущая страница'
+    Lore:
+    - '&7Перейти на предыдущую страницу.'
+  Next-page:
+    Material: ARROW
+    Custom-model-data: 0
+    Displayname: '&aСледующая страница'
+    Lore:
+    - '&7Перейти на следующую страницу.'
+  Close:
+    Material: BARRIER
+    Custom-model-data: 0
+    Displayname: '&cЗакрыть'
+    Lore: []
+Options:
+  Fill-empty-slots:
+    Enabled: true
+    Custom-model-data: 0
+  Hooks:
+    Name-tag-edit: true
+  Allowed-worlds:
+  - world
+  - lobby
+  - world_market
+  Items:
+    Close: true
+Database:
+  Type: SQLite
+  Table: alonsotags
+  File: database-alonsotags
+  Host: 127.0.0.1
+  Port: 3306
+  Database: alonsotags
+  Username: root
+  Password: '12345'
+Updates:
+  Auto-update-configuration: true
+  Check-updates: true
+  Notify-updates: true
+  Permission: alonsotags.update
+  Message: '&3[BetterBackpacks] &eA new update has been found! You are using version
+    {CURRENT}. Download version {NEW} here &c{LINK}'
