@@ -103,5 +103,4 @@ Updates:
   Check-updates: true
   Notify-updates: true
   Permission: alonsotags.update
-  Message: '&3[BetterBackpacks] &eA new update has been found! You are using version
-    {CURRENT}. Download version {NEW} here &c{LINK}'
+  Message: '&3[AlonsoTags] &eA new update has been found! You are using version {CURRENT}. Download version {NEW} here &c{LINK}'
