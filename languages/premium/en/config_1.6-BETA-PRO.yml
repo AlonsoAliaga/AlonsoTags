@@ -147,6 +147,8 @@ Items:
 
 Options:
   #To apply changes for aliases you must RESTART the server.
+  #Plugman or similar plugins are NOT and will NEVER be supported.
+  #Use /reload or restart your server.
   Main-command: "alonsotags"
   Aliases:
   - "alonsotag"
