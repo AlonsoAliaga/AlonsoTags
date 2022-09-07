@@ -3,152 +3,152 @@
 #        / _ \| / _ \ ' \(_-</ _ \| |/ _` / _` (_-< |  _/ '_/ _ \
 #       /_/ \_\_\___/_||_/__/\___/|_|\__,_\__, /__/ |_| |_| \___/
 #                                         |___/
-#                           by AlonsoAliaga
+#                           por AlonsoAliaga
 #          https://www.spigotmc.org/resources/authors/281176/
-# Thanks for purchasing my plugin! If you didn't purchase it then do it!
-#                  Only buyers will receive support.
+#Obrigado por comprar meu plugin! Se você não comprou então compre!
+#            Somente os compradores receberão suporte.
 
 Messages:
-  No-permission: "&cYou don't have permission to do this."
-  Reloaded: "&aSome messages and options have been reloaded. Other may require a restart!"
-  Disabled-world: "&cYou cannot use this command in this world. Try later!"
-  Invalid-player: "&cPlayer is not online!"
-  Target-not-loaded: "&cTarget player couldn't be loaded. Player must reconnect to the server!"
-  Please-reconnect: "&cUnexpected error. Please reconnect to the server!"
-  Error-purchasing: "&cUnexpected error purchasing this tag. Try again later, if problem persists contact an administrator."
-  Vault-not-available: "&cVault doesn't seem to be available in this server :("
+  No-permission: "&cVocê não tem permissão para fazer isso."
+  Reloaded: "&aAlgumas mensagens e opções foram recarregadas. Outras podem exigir uma reinicialização!"
+  Disabled-world: "&cVocê não pode usar este comando neste mundo. Tente mais tarde!"
+  Invalid-player: "&cPlayer não está online!"
+  Target-not-loaded: "&cO player de destino não pôde ser carregado. O player deve se reconectar ao servidor!"
+  Please-reconnect: "&cErro inesperado. Reconecte-se ao servidor!"
+  Error-purchasing: "&cErro inesperado ao comprar esta tag. Tente novamente mais tarde, se o problema persistir, entre em contato com um administrador."
+  Vault-not-available: "&cVault parece não estar disponível neste servidor :("
   Dyeable: "&6Dyeable tag."
   Help:
     Admin:
-    - "&4 /alonsotags open <player> &f- &cOpen tags GUI for player"
-    - "&4 /alonsotags reload &f- &cReload configuration (Restart recommended)"
+    - "&4 /alonsotags open <player> &f- &cAbre a GUI de tags para o jogador"
+    - "&4 /alonsotags reload &f- &cRecarregar configuração (reiniciar recomendado)"
     User:
-    - "&4 /alonsotags open &f- &cOpen tags GUI"
+    - "&4 /alonsotags open &f- &cAbre a GUI de tags"
   Colors:
-    Title: "&8Select a color"
+    Title: "&8Selecione uma cor"
   Tags:
-    Title: "&8Available tags ({PAGE}/{MAX})"
-    Already-selected: "&aYou already have this tag enabled!"
-    Tag-selected: "&aYou selected {TAG}&a tag!"
-    Tag-cleared: "&cYou cleared your current tag."
-    Tag-not-selected: "&cYou don't have any tag selected."
-    #You can use some placeholders here:
-    # {PRICE} to replace with tag price
-    # {TAG} to replace with tag (displayed tag)
-    # {TAG_NAME} to replace with tag displayname (as the item)
-    Tag-purchased: "&aYou successfully purchased tag &7{TAG_NAME}&a!"
+    Title: "&8Tags disponíveis ({PAGE}/{MAX})"
+    Already-selected: "&aVocê já tem esta tag ativada!"
+    Tag-selected: "&aVocê selecionou {TAG}&uma tag!"
+    Tag-cleared: "&cVocê limpou sua tag atual."
+    Tag-not-selected: "&cVocê não tem nenhuma tag selecionada."
+    #Você pode usar alguns espaços reservados aqui:
+    # {PRICE} para substituir pelo preço da etiqueta
+    # {TAG} para substituir por tag (tag exibida)
+    # {TAG_NAME} para substituir pelo nome de exibição da tag (como o item)
+    Tag-purchased: "&aVocê comprou a tag &7{TAG_NAME}&a!"
   Preview:
-    No-permission: "&cYou don't have permissions to preview tags :("
-    No-permission-for-tag: "&cYou don't have permissions to preview this tag :("
-    #Used only if Title option is enabled in Premium options for preview.
-    #Placeholders available: {PLAYER} replaced with playername and {TAG} replaced with tag preview.
-    #PlaceholderAPI is available here. Leave empty "" to not send it.
-    Title: "&6&lPreview"
-    #Used only if Title option is enabled in Premium options  for preview.
-    #Placeholders available: {PLAYER} replaced with playername and {TAG} replaced with tag preview.
-    #PlaceholderAPI is available here. Leave empty "" to not send it.
+    No-permission: "&cVocê não tem permissão para visualizar tags :("
+    No-permission-for-tag: "&cVocê não tem permissão para visualizar esta tag :("
+    #Usado somente se a opção Título estiver habilitada nas opções Premium para visualização.
+    #Espaços reservados disponíveis: {PLAYER} substituído pelo nome do jogador e {TAG} substituído pela visualização da tag.
+    #PlaceholderAPI está disponível aqui. Deixe "" vazio para não enviar.
+    Title: "&6&lVisualizar"
+    #Usado somente se a opção Título estiver habilitada nas opções Premium para visualização.
+    #Espaços reservados disponíveis: {PLAYER} substituído pelo nome do jogador e {TAG} substituído pela visualização da tag.
+    #PlaceholderAPI está disponível aqui. Deixe "" vazio para não enviar.
     Subtitle: "{TAG} {PLAYER}"
-    #Used only if Chat option is enabled in Premium options for preview.
-    #Placeholders available: {PLAYER} replaced with playername and {TAG} replaced with tag preview.
-    #PlaceholderAPI is available here. Leave empty [] to not send anything.
+    #Usado somente se a opção Chat estiver habilitada nas opções Premium para visualização.
+    #Espaços reservados disponíveis: {PLAYER} substituído pelo nome do jogador e {TAG} substituído pela visualização da tag.
+    #PlaceholderAPI está disponível aqui. Deixe vazio [] para não enviar nada.
     Chat:
-    - "&c&lTag preview:"
-    - "&f{TAG} {PLAYER}&f: &7Hello this is a test on how the tag would look like!"
-    #Click to preview message.
-    Right-click-to-preview: "&eRight-click to preview."
+    - "&c&lVisualização da etiqueta:"
+    - "&f{TAG} {PLAYER}&f: &7Olá, este é um teste de como a tag ficaria!"
+    #Clique para visualizar a mensagem.
+    Right-click-to-preview: "&eClique com o botão direito do mouse para visualizar."
   Placeholders:
-    #This is for %alonsotags_tag%
+    #Isto é para %alonsotags_tag%
     Tag:
-      None: "&7None"
-      Format: "{TAG}"
-    #This is for %alonsotags_tag_chat%
+      None: "&7Nenhum"
+      Formato: "{TAG}"
+    #Isto é para %alonsotags_tag_chat%
     Tag-chat:
-      #In case you don't wanna to display anything if player doesn't have a tag selected.
+      #Caso você não queira exibir nada se o jogador não tiver uma tag selecionada.
       None: ""
-      #This is in case you WANT to add extra spaces for your Chat plugin like:
-      #If tag selected => "[KNIGHT] AlonsoAliaga: Hello my tag has an extra space to fix better."
-      #If no tag selected => "AlonsoAliaga: Hello I don't have a tag selected."
+      #Isto é caso você QUISER adicionar espaços extras para o seu plug-in de bate-papo, como:
+      #If tag selected => "[KNIGHT] AlonsoAliaga: Olá minha tag tem um espaço extra para corrigir melhor."
+      #If nenhuma tag selecionada => "AlonsoAliaga: Olá, não tenho uma tag selecionada."
       Format: "{TAG} "
-    #This is for %alonsotags_tag_tab%
+    #Isto é para %alonsotags_tag_tab%
     Tag-tab:
       None: ""
       Format: " {TAG}"
-    #This is for %alonsotags_tag_identifier%
+    #Isto é para %alonsotags_tag_identifier%
     Tag-identifier:
-      None: "None"
+      None: "Nenhum"
       Format: "{TAG}"
-    #This is for %alonsotags_tag_scoreboard%
+    #Isto é para %alonsotags_tag_scoreboard%
     Tag-scoreboard:
-      None: "&7None"
-      #This is in case you WANT to add extra spaces.
+      None: "&7Nenhum"
+      #Isto é caso você QUISER adicionar espaços extras.
       Format: "{TAG}"
 
 Permissions:
   Admin: "alonsotags.admin"
-  #Permission to preview tags.
-  Preview: "none"
+  #Permissão para visualizar tags.
+  Preview: "nenhuma"
 
 Items:
   Player:
     Slot: 49
     Active:
-      #Supports PlaceholderAPI if available.
+      #Suporta PlaceholderAPI, se disponível.
       Displayname: "&a{PLAYER}"
-      #Supports PlaceholderAPI if available.
+      #Suporta PlaceholderAPI, se disponível.
       Lore:
-      - "&7Current tag: &f{TAG}"
+      - "&7Tag atual: &f{TAG}"
       - " "
-      - "&eClick to clear your current tag."
+      - "&eClique para limpar sua tag atual."
     Inactive:
-      #Supports PlaceholderAPI if available.
+      #Suporta PlaceholderAPI, se disponível.
       Displayname: "&c{PLAYER}"
-      #Supports PlaceholderAPI if available.
+      #Suporta PlaceholderAPI, se disponível.
       Lore:
-      - "&7Current tag: &cNot selected"
+      - "&7Tag atual: &cNão selecionado"
   Previous-page:
     Slot: 45
-    Material: ARROW
+    Material: SETA
     Hide-flags: true
     Custom-model-data: 0
-    Displayname: "&aPrevious page"
+    Displayname: "&aPágina anterior"
     Lore:
-    - "&7Move to previous page."
+    - "&7Mover para a página anterior."
   Next-page:
     Slot: 53
-    Material: ARROW
+    Material: SETA
     Hide-flags: true
     Custom-model-data: 0
-    Displayname: "&aNext page"
+    Displayname: "&aPróxima página"
     Lore:
-    - "&7Move to next page."
+    - "&7Mover para a próxima página."
   Close:
     Slot: 48
-    Material: BARRIER
+    Material: BARREIRA
     Hide-flags: true
     Custom-model-data: 0
-    Displayname: "&cClose GUI"
+    Displayname: "&cFechar GUI"
     Lore: []
   Close-colors:
-    #Set to -1 to disable
+    #Defina como -1 para desabilitar
     Slot: 44
-    Material: BARRIER
+    Material: BARREIRA
     Hide-flags: true
     Custom-model-data: 0
-    Displayname: "&cClose GUI"
+    Displayname: "&cFechar GUI"
     Lore: []
   Back-to-tags:
-    #Set to -1 to disable
+    #Defina como -1 para desabilitar
     Slot: 36
-    Material: ARROW
+    Material: SETA
     Hide-flags: true
     Custom-model-data: 0
-    Displayname: "&9Back to tags"
+    Displayname: "&9Voltar para tags"
     Lore: []
 
 Options:
-  #To apply changes for aliases you must RESTART the server.
-  #Plugman or similar plugins are NOT and will NEVER be supported.
-  #Use /reload or restart your server.
+  #Para aplicar as alterações de aliases você deve REINICIAR o servidor.
+  #Plugman ou plugins semelhantes NÃO são e NUNCA serão suportados.
+  #Use /reload ou reinicie seu servidor.
   Main-command: "alonsotags"
   Aliases:
   - "alonsotag"
@@ -163,100 +163,100 @@ Options:
     - "reload"
 
   Debug: false
-  #This option adds the line with plugin name/version/developer in help menu.
-  #Please, leave this enabled to support my work :D
+  #Esta opção adiciona a linha com o nome/versão/desenvolvedor do plugin no menu de ajuda.
+  #Por favor, deixe isso habilitado para apoiar meu trabalho :D
   Support-developer: true
   Close-on-action:
-    #Close gui on tag select?
+    #Fechar gui na seleção de tags?
     Select: false
-    #Close gui on tag clear?
+    #Fechar gui na tag clear?
     Clear: false
-    #Close gui on tag select?
+    #Fechar gui na seleção de tags?
     Select-color: true
-    #Close gui on tag preview?
+    #Fechar gui na visualização da tag?
     Preview-tag: false
-    #Close gui on color preview?
+    #Fechar gui na visualização de cores?
     Preview-color: false
   Tag:
-    #Use this option if you have issues with other plugins that override tags added by AlonsoTags.
-    #This option creates a delay after player connection to add the tag. Set to 0 to disable.
-    #Time is in ticks. 20 ticks = 1 second. If you want a 2 seconds delay, then you use 2 x 20 = 40.
+    #Use esta opção se você tiver problemas com outros plugins que substituem as tags adicionadas pelo AlonsoTags.
+    #Esta opção cria um atraso após a conexão do jogador para adicionar a tag. Defina como 0 para desabilitar.
+    #Tempo está em ticks. 20 tiques = 1 segundo. Se você quiser um atraso de 2 segundos, use 2 x 20 = 40.
     Delay: 0
   Items:
-    #If enabled, close item will be displayed in slot 48 (Not customizable due to the complex features this plugin offers)
+    #Se ativado, o item de fechamento será exibido no slot 48 (não personalizável devido aos recursos complexos que este plug-in oferece)
     Close: true
   Fill-empty-slots:
-    #Fill all empty slots with black stained glass pane in tags gui?
+    #Preencha todos os espaços vazios com vitrais pretos em tags gui?
     Enabled: true
-    #Use custom model data? Use it only IF NECESSARY (Only 1.14+)
+    #Usar dados de modelo personalizado? Use-o apenas SE NECESSÁRIO (Apenas 1.14+)
     Custom-model-data: 0
   Fill-colors-empty-slots:
-    #Fill all empty slots with black stained glass pane in colors gui?
+    #Preencha todos os espaços vazios com vitrais pretos nas cores gui?
     Enabled: true
-    #Use custom model data? Use it only IF NECESSARY (Only 1.14+)
+    #Usar dados de modelo personalizado? Use-o apenas SE NECESSÁRIO (Apenas 1.14+)
     Custom-model-data: 0
   Hooks:
-    #This will use NameTagEdit API if available to set player suffix. (ITS SUFFIX, NOT PREFIX)
+    #Isso usará a API NameTagEdit, se disponível, para definir o sufixo do player. (SEU SUFIXO, NÃO PREFIXO)
     Name-tag-edit: true
-  #Allowed worlds in which players can access "/alonsotags"
-  #If you wanna enable the command in all worlds. Just set to Allowed-worlds: []
+  #Mundos permitidos nos quais os jogadores podem acessar "/alonsotags"
+  #Se você quiser habilitar o comando em todos os mundos. Apenas defina como Mundos permitidos: []
   Allowed-worlds:
-  - "world"
-  - "lobby"
-  - "world_market"
+  - "mundo"
+  - "salão"
+  - "mercado mundial"
   Compatibility:
-    #Recommended if you are using EssentialsChat. Some of my plugins add this support.
-    #Make sure you enable ONLY if it's necessary. In addition, ONLY one is enough. If you have this option enabled in
-    #one of my plugins you can disable this option in all others.
-    #This allow you to use any placeholder from PlaceholderAPI but replacing it with brackets instead of percentage signs.
-    #Example: %aplaceholder% => {aplaceholder}
-    #This includes the ones that are not from AlonsoTags.
+    #Recomendado se você estiver usando o EssentialsChat. Alguns dos meus plugins adicionam esse suporte.
+    #Certifique-se de habilitar SOMENTE se for necessário. Além disso, APENAS um é suficiente. Se você tiver esta opção habilitada em
+    #um dos meus plugins você pode desabilitar esta opção em todos os outros.
+    #Isso permite que você use qualquer espaço reservado da PlaceholderAPI, mas substituindo-o por colchetes em vez de sinais de porcentagem.
+    #Exemplo: %aplaceholder% => {aplaceholder}
+    #Isso inclui os que não são da AlonsoTags.
     Chat: false
-  #This is just the name of the category.
+  #Este é apenas o nome da categoria.
   Premium:
     Color:
-      #Rows for Color GUI. Min 1, max 6.
+      #Rows for Color GUI. Mínimo 1, máximo 6.
       Rows: 5
-      #Preview is an option that allows players with the permission to view tag as subtitle like preview.
+      #Preview é uma opção que permite aos jogadores com permissão para visualizar a tag como legenda como visualização.
       Preview:
         Enabled: true
         Title: true
         Chat: true
-        #If enabled all players can preview all tags ignoring tag permissions.
-        #If false, players can only preview tags they have access too (purchased if tag is purchasable)
+        #Se ativado, todos os jogadores podem visualizar todas as tags, ignorando as permissões de tag.
+        #Se false, os jogadores só podem visualizar as tags que eles também têm acesso (compradas se a tag for comprável)
         Ignore-permission: true
 
 Database:
-  #Available types: MySQL and SQLite
-  #You can use MySQL to make it global or you can use SQLite to make it local.
-  #MySQL requires a server (local or external)
-  #SQLite doesn't require anything, it's saved in a db file in the folder.
+  #Tipos disponíveis: MySQL e SQLite
+  #Você pode usar o MySQL para torná-lo global ou você pode usar o SQLite para torná-lo local.
+  #MySQL requer um servidor (local ou externo)
+  #SQLite não requer nada, é salvo em um arquivo db na pasta.
   Type: "SQLite"
   Table: "alonsotags"
-  #If type is SQLite
+  #Se o tipo for SQLite
   File: "database-alonsotags"
-  #If type is MySQL
+  #Se o tipo for MySQL
   Host: 127.0.0.1
-  Port: 3306
+  Porta: 3306
   Database: "alonsotags"
   Username: "root"
   Password: "12345"
-  #Modify this just if you know what you are doing.
-  #This will be added at the end of database url (Not in SQLITE, only in MySQL).
-  #Useful if you want to set useSSL or autoReconnect or any other modifier.
+  #Modifique isso apenas se você souber o que está fazendo.
+  #Isso será adicionado no final da url do banco de dados (não no SQLITE, apenas no MySQL).
+  #Útil se você deseja definir useSSL ou autoReconnect ou qualquer outro modificador.
   Additional-url: ""
-  #Used to keep connection alive to prevent connection timeout.
-  #Time in minutes. Recommended 30. Minimum 5.
+  #Usado para manter a conexão ativa para evitar o tempo limite da conexão.
+  #Tempo em minutos. Recomendado 30. Mínimo 5.
   Keep-connection-interval: 30
 
 Updates:
-  #Auto update configuration? Enabling will delete comments.
-  Auto-update-configuration: true
-  #Check for updates? Recommended to keep it enabled.
-  Check-updates: true
-  #Notify updates when player with permission joins the server?
-  Notify-updates: true
-  #Permission required to receive update message.
-  Permission: "alonsotags.update"
-  #Message to send when update is found.
-  Message: "&4[BetterTags] &eA new update has been found! You are using version {CURRENT}. Download version {NEW} here &c{LINK}"
+   #Configuração de atualização automática? A ativação excluirá comentários.
+   Auto-update-configuration: true
+   #Verificar atualizações? Recomendado para mantê-lo ativado.
+   Check-updates: true
+   #Notificar atualizações quando um jogador com permissão entra no servidor?
+   Notify-updates: true
+   #Permissão necessária para receber mensagem de atualização.
+   Permission: "alonsotags.update"
+   #Mensagem para enviar quando a atualização for encontrada.
+   Message: "&4[BetterTags] &eUma nova atualização foi encontrada! Você está usando a versão {CURRENT}. Baixe a versão {NEW} aqui &c{LINK}"

@@ -1,27 +1,27 @@
-#This is legacy version. Plugin contains different versions.
+#Esta é a versão legada. Plugin contém versões diferentes.
 Colors:
-  #This is default color. Please, leave this as it is.
+  #Esta é a cor padrão. Por favor, deixe isso como está.
   default:
     Enabled: true
     Slot: 11
     Name: "&fDefault color"
-    #Set to none to not require permission.
+    #Esta é a cor padrão. Por favor, deixe isso como está.
     Permission: "none"
-    #This will be the color used. Supports color nodes.
-    #If you use colors, MAKE SURE THE TAG prefix IS PLAIN TEXT WITHOUT COLOR and has {COLOR} in tag.
-    #Set to "none" to use tag default color or empty if not defined.
+    #Esta será a cor utilizada. Suporta nós de cores.
+    #Se você usar cores, CERTIFIQUE-SE de que o prefixo da TAG SEJA TEXTO SEM COR e tenha {COLOR} na tag.
+    #Defina como "none" para usar a cor padrão da tag ou vazio se não estiver definido.
     Color: "none"
     No-permission-message: "&cThis color should be free. Ask an administrator!"
     Items:
       Locked:
-        #Supports "CUSTOM_HEAD" and any material. It also supports durability for old versions.
-        #Format is "MATERIAL:DURABILITY", example: "INK_SAC:14"
+        #Suporta "CUSTOM_HEAD" e qualquer material. Também suporta durabilidade para versões antigas.
+        #O formato é "MATERIAL:DURABILITY", exemplo: "INK_SAC:14"
         Material: "BOOK"
-        #Only required if Material is CUSTOM_HEAD
+        #Obrigatório apenas se o material for CUSTOM_HEAD
         Texture: "ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0="
-        #Only for 1.14+
+        #Apenas para 1.14+
         Custom-model-data: 0
-        #Hide flags?
+        #Esconder bandeiras?
         Hide-flags: true
         Glow: false
         Displayname: "&cDefault"
@@ -32,9 +32,9 @@ Colors:
         - "&cThis should be free!"
       Unlocked:
         Material: "BOOK"
-        #Only required if Material is CUSTOM_HEAD
+        #Obrigatório apenas se o material for CUSTOM_HEAD
         Texture: "ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0="
-        #Only for 1.14+
+        #Apenas para 1.14+
         Custom-model-data: 0
         Hide-flags: true
         Glow: false
@@ -49,7 +49,7 @@ Colors:
     Slot: 12
     Name: "&cRed color"
     Permission: "alonsotags.color.red"
-    #Color for the tag.
+    #Cor para a etiqueta.
     Color: "&c"
     Items:
       Locked:
