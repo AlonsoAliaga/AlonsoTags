@@ -1,0 +1,262 @@
+#          _   _                 _____               ___
+#         /_\ | |___ _ _  ___ __|_   _|_ _ __ _ ___ | _ \_ _ ___
+#        / _ \| / _ \ ' \(_-</ _ \| |/ _` / _` (_-< |  _/ '_/ _ \
+#       /_/ \_\_\___/_||_/__/\___/|_|\__,_\__, /__/ |_| |_| \___/
+#                                         |___/
+#                           por AlonsoAliaga
+#          https://www.spigotmc.org/resources/authors/281176/
+#Obrigado por comprar meu plugin! Se você não comprou então compre!
+#            Somente os compradores receberão suporte.
+
+Messages:
+  No-permission: "&cVocê não tem permissão para fazer isso."
+  Reloaded: "&aAlgumas mensagens e opções foram recarregadas. Outras podem exigir uma reinicialização!"
+  Disabled-world: "&cVocê não pode usar este comando neste mundo. Tente mais tarde!"
+  Invalid-player: "&cPlayer não está online!"
+  Target-not-loaded: "&cO player de destino não pôde ser carregado. O player deve se reconectar ao servidor!"
+  Please-reconnect: "&cErro inesperado. Reconecte-se ao servidor!"
+  Error-purchasing: "&cErro inesperado ao comprar esta tag. Tente novamente mais tarde, se o problema persistir, entre em contato com um administrador."
+  Vault-not-available: "&cVault parece não estar disponível neste servidor :("
+  Dyeable: "&6Dyeable tag."
+  Help:
+    Admin:
+    - "&4 /alonsotags open <player> &f- &cAbre a GUI de tags para o jogador"
+    - "&4 /alonsotags reload &f- &cRecarregar configuração (reiniciar recomendado)"
+    User:
+    - "&4 /alonsotags open &f- &cAbre a GUI de tags"
+  Colors:
+    Title: "&8Selecione uma cor"
+  Tags:
+    Title: "&8Tags disponíveis ({PAGE}/{MAX})"
+    Already-selected: "&aVocê já tem esta tag ativada!"
+    Tag-selected: "&aVocê selecionou {TAG}&uma tag!"
+    Tag-cleared: "&cVocê limpou sua tag atual."
+    Tag-not-selected: "&cVocê não tem nenhuma tag selecionada."
+    #Você pode usar alguns espaços reservados aqui:
+    # {PRICE} para substituir pelo preço da etiqueta
+    # {TAG} para substituir por tag (tag exibida)
+    # {TAG_NAME} para substituir pelo nome de exibição da tag (como o item)
+    Tag-purchased: "&aVocê comprou a tag &7{TAG_NAME}&a!"
+  Preview:
+    No-permission: "&cVocê não tem permissão para visualizar tags :("
+    No-permission-for-tag: "&cVocê não tem permissão para visualizar esta tag :("
+    #Usado somente se a opção Título estiver habilitada nas opções Premium para visualização.
+    #Espaços reservados disponíveis: {PLAYER} substituído pelo nome do jogador e {TAG} substituído pela visualização da tag.
+    #PlaceholderAPI está disponível aqui. Deixe "" vazio para não enviar.
+    Title: "&6&lVisualizar"
+    #Usado somente se a opção Título estiver habilitada nas opções Premium para visualização.
+    #Espaços reservados disponíveis: {PLAYER} substituído pelo nome do jogador e {TAG} substituído pela visualização da tag.
+    #PlaceholderAPI está disponível aqui. Deixe "" vazio para não enviar.
+    Subtitle: "{TAG} {PLAYER}"
+    #Usado somente se a opção Chat estiver habilitada nas opções Premium para visualização.
+    #Espaços reservados disponíveis: {PLAYER} substituído pelo nome do jogador e {TAG} substituído pela visualização da tag.
+    #PlaceholderAPI está disponível aqui. Deixe vazio [] para não enviar nada.
+    Chat:
+    - "&c&lVisualização da etiqueta:"
+    - "&f{TAG} {PLAYER}&f: &7Olá, este é um teste de como a tag ficaria!"
+    #Clique para visualizar a mensagem.
+    Right-click-to-preview: "&eClique com o botão direito do mouse para visualizar."
+  Placeholders:
+    #Isto é para %alonsotags_tag%
+    Tag:
+      None: "&7Nenhum"
+      Formato: "{TAG}"
+    #Isto é para %alonsotags_tag_chat%
+    Tag-chat:
+      #Caso você não queira exibir nada se o jogador não tiver uma tag selecionada.
+      None: ""
+      #Isto é caso você QUISER adicionar espaços extras para o seu plug-in de bate-papo, como:
+      #If tag selected => "[KNIGHT] AlonsoAliaga: Olá minha tag tem um espaço extra para corrigir melhor."
+      #If nenhuma tag selecionada => "AlonsoAliaga: Olá, não tenho uma tag selecionada."
+      Format: "{TAG} "
+    #Isto é para %alonsotags_tag_tab%
+    Tag-tab:
+      None: ""
+      Format: " {TAG}"
+    #Isto é para %alonsotags_tag_identifier%
+    Tag-identifier:
+      None: "Nenhum"
+      Format: "{TAG}"
+    #Isto é para %alonsotags_tag_scoreboard%
+    Tag-scoreboard:
+      None: "&7Nenhum"
+      #Isto é caso você QUISER adicionar espaços extras.
+      Format: "{TAG}"
+
+Permissions:
+  Admin: "alonsotags.admin"
+  #Permissão para visualizar tags.
+  Preview: "nenhuma"
+
+Items:
+  Player:
+    Slot: 49
+    Active:
+      #Suporta PlaceholderAPI, se disponível.
+      Displayname: "&a{PLAYER}"
+      #Suporta PlaceholderAPI, se disponível.
+      Lore:
+      - "&7Tag atual: &f{TAG}"
+      - " "
+      - "&eClique para limpar sua tag atual."
+    Inactive:
+      #Suporta PlaceholderAPI, se disponível.
+      Displayname: "&c{PLAYER}"
+      #Suporta PlaceholderAPI, se disponível.
+      Lore:
+      - "&7Tag atual: &cNão selecionado"
+  Previous-page:
+    Slot: 45
+    Material: SETA
+    Hide-flags: true
+    Custom-model-data: 0
+    Displayname: "&aPágina anterior"
+    Lore:
+    - "&7Mover para a página anterior."
+  Next-page:
+    Slot: 53
+    Material: SETA
+    Hide-flags: true
+    Custom-model-data: 0
+    Displayname: "&aPróxima página"
+    Lore:
+    - "&7Mover para a próxima página."
+  Close:
+    Slot: 48
+    Material: BARREIRA
+    Hide-flags: true
+    Custom-model-data: 0
+    Displayname: "&cFechar GUI"
+    Lore: []
+  Close-colors:
+    #Defina como -1 para desabilitar
+    Slot: 44
+    Material: BARREIRA
+    Hide-flags: true
+    Custom-model-data: 0
+    Displayname: "&cFechar GUI"
+    Lore: []
+  Back-to-tags:
+    #Defina como -1 para desabilitar
+    Slot: 36
+    Material: SETA
+    Hide-flags: true
+    Custom-model-data: 0
+    Displayname: "&9Voltar para tags"
+    Lore: []
+
+Options:
+  #Para aplicar as alterações de aliases você deve REINICIAR o servidor.
+  #Plugman ou plugins semelhantes NÃO são e NUNCA serão suportados.
+  #Use /reload ou reinicie seu servidor.
+  Main-command: "alonsotags"
+  Aliases:
+  - "alonsotag"
+  - "atags"
+  - "tags"
+  - "atag"
+  - "tag"
+  Sub-commands:
+    Open:
+    - "open"
+    Reload:
+    - "reload"
+
+  Debug: false
+  #Esta opção adiciona a linha com o nome/versão/desenvolvedor do plugin no menu de ajuda.
+  #Por favor, deixe isso habilitado para apoiar meu trabalho :D
+  Support-developer: true
+  Close-on-action:
+    #Fechar gui na seleção de tags?
+    Select: false
+    #Fechar gui na tag clear?
+    Clear: false
+    #Fechar gui na seleção de tags?
+    Select-color: true
+    #Fechar gui na visualização da tag?
+    Preview-tag: false
+    #Fechar gui na visualização de cores?
+    Preview-color: false
+  Tag:
+    #Use esta opção se você tiver problemas com outros plugins que substituem as tags adicionadas pelo AlonsoTags.
+    #Esta opção cria um atraso após a conexão do jogador para adicionar a tag. Defina como 0 para desabilitar.
+    #Tempo está em ticks. 20 tiques = 1 segundo. Se você quiser um atraso de 2 segundos, use 2 x 20 = 40.
+    Delay: 0
+  Items:
+    #Se ativado, o item de fechamento será exibido no slot 48 (não personalizável devido aos recursos complexos que este plug-in oferece)
+    Close: true
+  Fill-empty-slots:
+    #Preencha todos os espaços vazios com vitrais pretos em tags gui?
+    Enabled: true
+    #Usar dados de modelo personalizado? Use-o apenas SE NECESSÁRIO (Apenas 1.14+)
+    Custom-model-data: 0
+  Fill-colors-empty-slots:
+    #Preencha todos os espaços vazios com vitrais pretos nas cores gui?
+    Enabled: true
+    #Usar dados de modelo personalizado? Use-o apenas SE NECESSÁRIO (Apenas 1.14+)
+    Custom-model-data: 0
+  Hooks:
+    #Isso usará a API NameTagEdit, se disponível, para definir o sufixo do player. (SEU SUFIXO, NÃO PREFIXO)
+    Name-tag-edit: true
+  #Mundos permitidos nos quais os jogadores podem acessar "/alonsotags"
+  #Se você quiser habilitar o comando em todos os mundos. Apenas defina como Mundos permitidos: []
+  Allowed-worlds:
+  - "mundo"
+  - "salão"
+  - "mercado mundial"
+  Compatibility:
+    #Recomendado se você estiver usando o EssentialsChat. Alguns dos meus plugins adicionam esse suporte.
+    #Certifique-se de habilitar SOMENTE se for necessário. Além disso, APENAS um é suficiente. Se você tiver esta opção habilitada em
+    #um dos meus plugins você pode desabilitar esta opção em todos os outros.
+    #Isso permite que você use qualquer espaço reservado da PlaceholderAPI, mas substituindo-o por colchetes em vez de sinais de porcentagem.
+    #Exemplo: %aplaceholder% => {aplaceholder}
+    #Isso inclui os que não são da AlonsoTags.
+    Chat: false
+  #Este é apenas o nome da categoria.
+  Premium:
+    Color:
+      #Rows for Color GUI. Mínimo 1, máximo 6.
+      Rows: 5
+      #Preview é uma opção que permite aos jogadores com permissão para visualizar a tag como legenda como visualização.
+      Preview:
+        Enabled: true
+        Title: true
+        Chat: true
+        #Se ativado, todos os jogadores podem visualizar todas as tags, ignorando as permissões de tag.
+        #Se false, os jogadores só podem visualizar as tags que eles também têm acesso (compradas se a tag for comprável)
+        Ignore-permission: true
+
+Database:
+  #Tipos disponíveis: MySQL e SQLite
+  #Você pode usar o MySQL para torná-lo global ou você pode usar o SQLite para torná-lo local.
+  #MySQL requer um servidor (local ou externo)
+  #SQLite não requer nada, é salvo em um arquivo db na pasta.
+  Type: "SQLite"
+  Table: "alonsotags"
+  #Se o tipo for SQLite
+  File: "database-alonsotags"
+  #Se o tipo for MySQL
+  Host: 127.0.0.1
+  Porta: 3306
+  Database: "alonsotags"
+  Username: "root"
+  Password: "12345"
+  #Modifique isso apenas se você souber o que está fazendo.
+  #Isso será adicionado no final da url do banco de dados (não no SQLITE, apenas no MySQL).
+  #Útil se você deseja definir useSSL ou autoReconnect ou qualquer outro modificador.
+  Additional-url: ""
+  #Usado para manter a conexão ativa para evitar o tempo limite da conexão.
+  #Tempo em minutos. Recomendado 30. Mínimo 5.
+  Keep-connection-interval: 30
+
+Updates:
+   #Configuração de atualização automática? A ativação excluirá comentários.
+   Auto-update-configuration: true
+   #Verificar atualizações? Recomendado para mantê-lo ativado.
+   Check-updates: true
+   #Notificar atualizações quando um jogador com permissão entra no servidor?
+   Notify-updates: true
+   #Permissão necessária para receber mensagem de atualização.
+   Permission: "alonsotags.update"
+   #Mensagem para enviar quando a atualização for encontrada.
+   Message: "&4[BetterTags] &eUma nova atualização foi encontrada! Você está usando a versão {CURRENT}. Baixe a versão {NEW} aqui &c{LINK}"
