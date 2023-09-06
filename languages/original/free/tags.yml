@@ -1,0 +1,477 @@
+#Create as many tags as you want here.
+#Just make sure you FOLLOW the format.
+#Tags will appear in the same order.
+Tags:
+  #Tag identifier. This MUST BE UNIQUE for the same tag.
+  #You can setup your tags in one server and then copy tags.yml
+  #to others. Make sure they are the same in all server.
+  new-tag:
+    #You can use any material you want. Due to API changes and to be able to keep compatibility 1.8+ durability
+    #is not supported in any version. Only materials. You can also use "CUSTOM_HEAD" to make the item a custom head with texture.
+    #If "CUSTOM_HEAD" is necessary to specify "Texture", otherwise default texture will be used.
+    #An additional material type was added. "RANDOM" will select a random material when server starts. IT WON'T DISPLAY A RANDOM MATERIAL EVERY TIME YOU OPEN THE GUI.
+    #Random material will be selected JUST ON RESTART/RELOAD.
+    Material: CUSTOM_HEAD
+    #This is only available in 1.14+
+    #This option allows you to use a CUSTOM textures for this item (using a texture pack)
+    #Leave it as 0 if you don't plan to use it or don't know how. THIS WILL NOT WORK IF MATERIAL IS CUSTOM_HEAD
+    Custom-model-data: 0
+    #Texture MUST be specified if material is CUSTOM_HEAD otherwise our default texture will be used.
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0="
+    #Tag that will be displayed. Don't use spaces before or after the tag. You can use spaces IN the tag.
+    #Example: Don't do this: "   &6[MY TAG]   ", just do "&6[MY TAG]"
+    Tag: "&7[NEW]"
+    #Recommended to add "{COLOR}" before the text. This will be replaced with color red to show player doesn't have access to the tag.
+    Displayname: "&7&l{COLOR}Starter Tag"
+    #Permission required for this tag. Set to "none" to not require permission.
+    Permission: "none"
+    Lore:
+      Locked:
+      - "&7Free tag for all starters."
+      - "&7Preview: &f{TAG}"
+      - ""
+      - "&cUnlock automatically."
+      Unlocked:
+      - "&7Free tag for all starters."
+      - "&7Preview: &f{TAG}"
+      - ""
+      - "&eClick to select."
+      Selected:
+      - "&7Free tag for all starters."
+      - "&7Preview: &f{TAG}"
+      - ""
+      - "&aSelected."
+    No-permission-message: "&cYou don't have permission to use this tag!"
+    Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
+  beginner-tag:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Tag: "&7[BEGINNER]"
+    Displayname: "&7&l{COLOR}Beginner Tag"
+    Permission: "none"
+    Lore:
+      Locked:
+      - "&7Tag for beginners."
+      - "&7Preview: &f{TAG}"
+      - ""
+      - "&cUnlocks automatically."
+      Unlocked:
+      - "&7Tag for beginners."
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&eClick to select."
+      Selected:
+      - "&7Tag for beginners."
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&aSelected."
+    No-permission-message: "&cYou don't have permission to use this tag!"
+    Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
+  dash-lover-tag:
+    Material: CUSTOM_HEAD
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTBjZWFlMmM2MTdiZTllNTA3NjU0ZDI4NmZhMzY1ZWI3NjI4MTY3MGFiZThjNTRjZWFjZTUxYThkOTEwOTY0MiJ9fX0="
+    Custom-model-data: 0
+    Tag: "&6[DASH_LOVER]"
+    Displayname: "&6&l{COLOR}Dash lover Tag"
+    Permission: "alonsotags.tag.dash-lover"
+    Lore:
+      Locked:
+      - "&7Tag for beginners."
+      - "&7Preview: &f{TAG}"
+      - ""
+      - "&cPurchase at &bstore.yournetwork.net"
+      Unlocked:
+      - "&7Tag for beginners."
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&eClick to select."
+      Selected:
+      - "&7Tag for beginners."
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&aSelected."
+    No-permission-message: "&cYou don't own this tag. Purchase it on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
+  rekt-tag:
+    Material: ENDER_PEARL
+    Custom-model-data: 0
+    Tag: "&7[REKT]"
+    Displayname: "&a&l{COLOR}Rekt Tag"
+    Permission: "alonsotags.tag.rekt"
+    Lore:
+      Locked:
+      - "&7Tag for pvp masters."
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&cRequires &a[VIP] &crank."
+      Unlocked:
+      - "&7Tag for pvp masters."
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&eClick to select."
+      Selected:
+      - "&7Tag for pvp masters."
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&aSelected."
+    No-permission-message: "&cThis tag requires &a[VIP] &crank. Purchase on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
+  knight-tag:
+    Material: CUSTOM_HEAD
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYThiNTMyY2M5MDUwYzUyMGExZGVjZDgzYTAyM2U2OTZkY2RmMzA0MGYyNjNjOWIzNDkzYjk5MTU1N2E5YThhIn19fQ=="
+    Tag: "&f[KNIGHT]"
+    Displayname: "&f&l{COLOR}Knight Tag"
+    Permission: "alonsotags.tag.knight"
+    Lore:
+      Locked:
+      - "&7Tag for the best warriors."
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&cPurchase at &bstore.yournetwork.net"
+      Unlocked:
+      - "&7Tag for the best warriors."
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&aPurchased on store.yournetwork.net"
+      - "&eClick to select."
+      Selected:
+      - "&7Tag for the best warriors."
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&aSelected."
+    No-permission-message: "&cYou don't own this tag. Purchase on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
+  magic-tag:
+    Material: CUSTOM_HEAD
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGQ4OGZhNzRkYzkyZWUxMDQ0NmVmYjg2YWQ1YzZjOTVhMzk4ZTMxMjU5Y2RlNTIxYWE3MzIyZWY5MmRjMjEzYiJ9fX0="
+    Tag: "&d[MAGIC]"
+    Displayname: "&d&l{COLOR}Magic Tag"
+    Permission: "alonsotags.tag.magic"
+    Lore:
+      Locked:
+      - "&7Tag for magic masters!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&cCan be found in cubelets."
+      Unlocked:
+      - "&7Tag for magic masters!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&eClick to select."
+      Selected:
+      - "&7Tag for magic masters!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&aSelected."
+    No-permission-message: "&cYou don't own this tag. This can be found in cubelets!"
+    Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
+  kawaii-eyes-tag:
+    Material: CUSTOM_HEAD
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzYyY2E5ZmNhNjg4NjJkN2IxOWZhOTAxY2NlODg5MzQyMWRhMjI0NjU3MmFlYzE1MzQ4ODczNzJkZGU0NWZiYyJ9fX0="
+    Tag: "&d(≧◡≦)"
+    Displayname: "&d&l{COLOR}Kawaii eyes Tag"
+    Permission: "alonsotags.tag.kawaiieyes"
+    Lore:
+      Locked:
+      - "&7Tag for kawaii people!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&cCan be found in cubelets."
+      Unlocked:
+      - "&7Tag for kawaii people!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&eClick to select."
+      Selected:
+      - "&7Tag for kawaii people!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&aSelected."
+    No-permission-message: "&cYou don't own this tag. This can be found in cubelets!"
+    Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
+  kawaii-mouth-tag:
+    Material: CUSTOM_HEAD
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjc4NTVkNmRkNTM4NDc5YmU4MGFiMDAzN2E5YmFlYmJjYmU3MTQ2ZTViZGQyMGRjNGM2Y2U3OTllMDgxMzlkZSJ9fX0="
+    Tag: "&b(◕ω◕)"
+    Displayname: "&b&l{COLOR}Kawaii mouth Tag"
+    Permission: "alonsotags.tag.kawaiimouth"
+    Lore:
+      Locked:
+      - "&7Tag for kawaii people!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&cRequires &6[MVP++] &crank."
+      Unlocked:
+      - "&7Tag for kawaii people!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&eClick to select."
+      Selected:
+      - "&7Tag for kawaii people!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&aSelected."
+    No-permission-message: "&cYou need &6[MVP++]&c to use this tag. Purchase it at &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
+  kawaii-kiss-tag:
+    Material: CUSTOM_HEAD
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTNmZWVjMmE0YjVjNzBlNDI5NzUyZmU2ZDc5ZDIyZGY0ZTJkYzA2NDk1ZTlhNzQ3NmIwNjYzYTFjMzQ2ZDc5YiJ9fX0="
+    Tag: "&e(◕3◕)"
+    Displayname: "&e&l{COLOR}Kawaii kiss Tag"
+    Permission: "alonsotags.tag.kawaiikiss"
+    Lore:
+      Locked:
+      - "&7Tag for kawaii people!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&cCan be found in cubelets."
+      Unlocked:
+      - "&7Tag for kawaii people!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&eClick to select."
+      Selected:
+      - "&7Tag for kawaii people!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&aSelected."
+    No-permission-message: "&cYou don't own this tag. This can be found in cubelets!"
+    Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
+  king-tag:
+    Material: CUSTOM_HEAD
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmJjMzExYTRmYjljNDkzODliNGY0NThjMjllOTY4MzI0YzU4MjNiOGE5OWVhZGUxNzQ3ODY2Yzk1YjA2NGEifX19"
+    Tag: "&6[KING]"
+    Displayname: "&6&l{COLOR}King Tag"
+    Permission: "alonsotags.tag.king"
+    Lore:
+      Locked:
+      - "&7Tags for Kings!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&cReward claimable once your"
+      - "&creach YourNetwork Level 10."
+      Unlocked:
+      - "&7Tags for Kings!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&eClick to select."
+      Selected:
+      - "&7Tags for Kings!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&aSelected."
+    No-permission-message: "&cYou must be Level 10 to unlock this tag!"
+    Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
+  robot-tag:
+    Material: CUSTOM_HEAD
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmU2YTExM2I5Y2U1MzI4MTNkYTViMTcyYWM4YmJhYzRjYjQ2Mzc1NzQ5OTdmNWM4OWFkMTEyOTZjZjRjNWY4NiJ9fX0="
+    Tag: "&3[ROBOT]"
+    Displayname: "&3&l{COLOR}Robot Tag"
+    Permission: "alonsotags.tag.robot"
+    Lore:
+      Locked:
+      - "&7Tags for robots!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&cPurchase at &bstore.yournetwork.net&c!"
+      Unlocked:
+      - "&7Tags for robots!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&eClick to select."
+      Selected:
+      - "&7Tags for robots!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&aSelected."
+    No-permission-message: "&cYou don't own this tag. Purchase on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
+  miner-tag:
+    Material: DIAMOND_PICKAXE
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmU2YTExM2I5Y2U1MzI4MTNkYTViMTcyYWM4YmJhYzRjYjQ2Mzc1NzQ5OTdmNWM4OWFkMTEyOTZjZjRjNWY4NiJ9fX0="
+    Tag: "&7[MINER]"
+    Displayname: "&7&l{COLOR}Miner Tag"
+    Permission: "alonsotags.tag.miner"
+    Lore:
+      Locked:
+      - "&7Tags for miners!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&cPurchase at &bstore.yournetwork.net&c!"
+      Unlocked:
+      - "&7Tags for miners!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&eClick to select."
+      Selected:
+      - "&7Tags for miners!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&aSelected."
+    No-permission-message: "&cYou don't own this tag. Purchase on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
+  geek-tag:
+    Material: CUSTOM_HEAD
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTQ1YWVkYTAxZGZmMjk3OTAxMzVlMjIwMzQ2YjJjNWYwOWNlZTEwODZiYjQ5NDMzYjlkMGFlZjBkZTliMzE2In19fQ=="
+    Tag: "&b[GEEK]"
+    Displayname: "&b&l{COLOR}Geek Tag"
+    Permission: "alonsotags.tag.geek"
+    Lore:
+      Locked:
+      - "&7Tags for Geeks!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&cPurchase at &bstore.yournetwork.net&c!"
+      Unlocked:
+      - "&7Tags for Geeks!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&eClick to select."
+      Selected:
+      - "&7Tags for Geeks!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&aSelected."
+    No-permission-message: "&cYou don't own this tag. Purchase on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
+  idk-tag:
+    Material: RANDOM
+    Tag: "&d[IDK]"
+    Displayname: "&d&l{COLOR}Idk Tag"
+    Permission: "alonsotags.tag.idk"
+    Lore:
+      Locked:
+      - "&7Tags for IDK!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&cReward claimable once your"
+      - "&creach YourNetwork Level 10."
+      Unlocked:
+      - "&7Tags for IDK!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&eClick to select."
+      Selected:
+      - "&7Tags for IDK!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&aSelected."
+    No-permission-message: "&cYou must be Level 10 to unlock this tag!"
+    Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
+  lenny-tag:
+    Material: CUSTOM_HEAD
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY4ZjRjZWY5NDlmMzJlMzNlYzVhZTg0NWY5YzU2OTgzY2JlMTMzNzVhNGRlYzQ2ZTViYmZiN2RjYjYifX19"
+    Tag: "&e( ͡° ͜ʖ ͡°)"
+    Displayname: "&d&l{COLOR}Lenny Tag"
+    Permission: "alonsotags.tag.lenny"
+    Lore:
+      Locked:
+      - "&7Tags for lennys?"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&cReward claimable once your"
+      - "&creach YourNetwork Level 15."
+      Unlocked:
+      - "&7Tags for lennys!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&eClick to select."
+      Selected:
+      - "&7Tags for lennys!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&aSelected."
+    No-permission-message: "&cYou must be Level 15 to unlock this tag!"
+    Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
+  rich-tag:
+    Material: CUSTOM_HEAD
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTliOTA2YjIxNTVmMTkzNzg3MDQyMzM4ZDA1Zjg0MDM5MWMwNWE2ZDNlODE2MjM5MDFiMjk2YmVlM2ZmZGQyIn19fQ=="
+    Tag: "&b[⛃RICH]"
+    Displayname: "&b&l{COLOR}Rich Tag"
+    #If permission is "none" no permission will be required to buy.
+    Permission: "none"
+    #If Price is 0 too, tag will be free.
+    Price: 10000
+    Lore:
+      Locked:
+      - "&7Don't know what to do with money?"
+      - "&7This tag is for you!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&cPrice: &a${PRICE}"
+      - "&eClick to purchase."
+      Unlocked:
+      - "&7Don't know what to do with money?"
+      - "&7This tag is for you!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&eClick to select."
+      Selected:
+      - "&7Don't know what to do with money?"
+      - "&7This tag is for you!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&aSelected."
+    #Message that will be sent if you don't have money to purchase the tag.
+    No-permission-message: "&cYou don't have permission to purchase this tag!"
+    Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
+  rich-rank-tag:
+    Material: CUSTOM_HEAD
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTliOTA2YjIxNTVmMTkzNzg3MDQyMzM4ZDA1Zjg0MDM5MWMwNWE2ZDNlODE2MjM5MDFiMjk2YmVlM2ZmZGQyIn19fQ=="
+    Tag: "&6[⛃RICH]"
+    Displayname: "&6&l{COLOR}Rich Tag"
+    Permission: "none"
+    Price: 100000
+    Lore:
+      Locked:
+      - "&7Don't know what to do with money?"
+      - "&7This tag is for you!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&cPrice: &a${PRICE}"
+      - " "
+      - "&cRequires &6[RANK]&c rank!"
+      - "&eClick to purchase."
+      Unlocked:
+      - "&7Don't know what to do with money?"
+      - "&7This tag is for you!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&eClick to select."
+      Selected:
+      - "&7Don't know what to do with money?"
+      - "&7This tag is for you!"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&aSelected."
+    #Message that will be sent if you don't have money to purchase the tag.
+    No-permission-message: "&cYou require &b[RANK]&c to purchase this tag!"
+    Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
+  crying-cat-tag:
+    Material: CUSTOM_HEAD
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjQ4ZDQ4ZWZhMjk4N2M5MGY1MzM4MTgzZjZjMmI3MzI4ZmI5ZDI1MGM1ZjliYWZlMTg5MjY5NzkyY2E4In19fQ=="
+    Tag: "&d(ᗒᗣᗕ)"
+    Displayname: "&d&l{COLOR}Crying cat Tag"
+    Permission: "none"
+    Price: 100000
+    Lore:
+      Locked:
+      - "&7Oh look! It's a.. crying cat?"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&cPrice: &a${PRICE}"
+      - " "
+      - "&cRequires &6[RANK]&c rank!"
+      - "&eClick to purchase."
+      Unlocked:
+      - "&7Oh look! It's a.. crying cat?"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&eClick to select."
+      Selected:
+      - "&7Oh look! It's a.. crying cat?"
+      - "&7Preview: &f{TAG}"
+      - " "
+      - "&aSelected."
+    No-permission-message: "&cYou require &b[RANK]&c to purchase this tag!"
+    Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
